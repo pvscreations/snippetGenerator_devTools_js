@@ -9,7 +9,8 @@ for (var i of l){
       continue;
   }
   if (i.indexOf("<")==-1 | i.indexOf(">")==-1) {
-    st="${"+c+":"+i+"}";
+    string=i.replace(/\n/g," ");
+    st="${"+c+":"+string+"}";
     l[l.indexOf(i)]=st;
     c++;
   }
