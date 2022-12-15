@@ -17,7 +17,7 @@ for (var i of l){
 
 }
 // s=s.replace(/\"/,'\\\"');
-document.getElementById('output').innerText="\""+p+"\":"+'{\n\"prefix\":\"'+p+'\",\n'/*+"\"scopes\":\"html,javascript\",\n"*/+'\"body\":'+JSON.stringify(l)+"\n},";
+document.getElementById('output').innerText="\""+p+"\":"+'{\n\"prefix\":\"'+p+'\",\n'+"\"scopes\":\"html,javascript\",\n"+'\"body\":'+JSON.stringify(l)+"\n},";
 }
 function clipboard(){
     var c=document.getElementById("output").textContent;
